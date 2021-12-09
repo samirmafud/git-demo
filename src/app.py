@@ -14,3 +14,8 @@ def greeting():
 def sum(a: int, b: int):
     nums_sum = a + b
     return f"La suma de los dos números es: + {str(nums_sum)}"
+
+@app.route('/multiply/<int:a>/<int:b>')
+def multiply(a: int, b: int):
+    multiply = float(a * b)
+    return f"La multiplicación de los dos números es: + {str(multiply)}"
