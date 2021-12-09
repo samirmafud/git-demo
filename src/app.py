@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    return "Bienvenidos al proyecto de demostración Control de Repositorios con Gitflow"
+
+@app.route('/hello')
+def greeting():
     return "Hola mundo"
 
 @app.route('/sum/<int:a>/<int:b>')
